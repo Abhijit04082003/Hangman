@@ -1,0 +1,80 @@
+.Board {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 5rem;
+  color: var(--black);
+}
+
+.Board__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Board__hangman {
+  display: flex;
+}
+
+.Button {
+  max-height: 100px;
+  padding: 20px 30px;
+  background-color: var(--white);
+  border: 5px solid var(--black);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+
+.Button:hover,
+.Button:focus {
+  cursor: pointer;
+  box-shadow: 5px 5px 2px 1px rgba(15, 84, 105, 0.2);
+  transform: translateY(-0.1em);
+}
+
+.Input {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  border: 5px solid var(--black);
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  font-family: var(--font-family);
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.WordBlanks {
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+}
+
+.IncorrectGuess {
+  color: #ce0f0f;
+}
+
+.GuessedLetters,
+.GuessedLetters p {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+.PlayerMessage {
+  height: 20px;
+  font-size: 1.2rem;
+}
+
+.GameOverMessage {
+  text-align: center;
+  font-size: 3rem;
+}
